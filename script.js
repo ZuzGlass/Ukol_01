@@ -1,3 +1,5 @@
 const teplota = Number(prompt("Zadej teplotu pečení ve stupních Fahrenheita: "));
 
-document.body.innerHTML = "<h1>Nastavte troubu na " + Math.ceil((5 * (teplota - 32))/9) + " °C. </h1>"
+const prevod = Math.ceil((5 * (teplota - 32))/9)
+
+document.body.innerHTML = "<h1>Nastavte troubu na " + prevod + " °C. </h1>"
